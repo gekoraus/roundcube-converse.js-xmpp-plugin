@@ -65,7 +65,8 @@ class converse extends rcube_plugin
 		$rcmail = rcube::get_instance();
 
 		// TODO: exclude some more actions
-		if ($rcmail->task == 'login' || !empty($_REQUEST['_extwin']))
+		// excluding notes and calender for now, because converse.js breaks roundcube functions there
+		if ($rcmail->task == 'login' || !empty($_REQUEST['_extwin']) || $rcmail->task == 'notes' || $rcmail->task == 'calendar')
 			return;
 
 		// map session language with converse.js locale

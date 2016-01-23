@@ -41,7 +41,7 @@ $rcmail_config['converse_xmpp_password']= function($args) {
 // converse.js file to use, defaults to converse.min.js
 // alternatives: converse-no-otr.min.js, converse-no-locales-no-otr.min.js
 // If you want to disable OTR and/or locales, use one of the alternatives
-$rcmail_config['converse_jsfile'] = 'converse.min.js';
+$rcmail_config['converse_jsfile'] = 'converse-0.10.min.js';
 
 // Additional converse.js option to use
 // refer to https://conversejs.org/docs/html/index.html#configuration-variables
