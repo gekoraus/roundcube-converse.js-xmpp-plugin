@@ -52,7 +52,7 @@ form.set-xmpp-status {
 div.chat-title {
 	line-height: normal;
 	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif !important;
-	font-size: 11px !important;
+	font-size: 15px !important;
 	font-weight: normal;
 	height: auto;
 	text-decoration: none;
@@ -73,16 +73,15 @@ ul#controlbox-tabs li a {
 
 .participants ul.participant-list li {
 	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif !important;
-	font-size: 11px !important;
+	font-size: 13px !important;
 }
 
 .chat-content {
 	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif !important;
-	font-size: 11px !important;
+	font-size: 13px !important;
 }
 
 a.configure-chatroom-button,
-a.close-chatbox-button,
 .chatroom-form,
 .chat-body p,
 .chatroom-form legend,
@@ -97,7 +96,7 @@ div#login-dialog,
 div#settings
 {
 	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif !important;
-	font-size: 11px !important;
+	font-size: 15px !important;
 }
 
 .available-chatroom {
@@ -123,11 +122,6 @@ div#settings
 
 #toggle-controlbox {
 	font-size: 12px;
-}
-
-.chatbox .dropdown dt a span.icon-online,
-#converse-roster dd.current-xmpp-contact span.icon-online {
-    color: #0c0;
 }
 
 .chatbox .dropdown dt a span.icon-dnd,
@@ -158,4 +152,46 @@ div#settings
 
 #converse-roster .filter-type {
     width: 94px;
+}
+
+#conversejs a, #conversejs a:visited {
+    color: #4C4C4C;
+}
+
+#conversejs #controlbox .controlbox-head,
+#conversejs .chat-head.chat-head-chatbox {
+    background-color: #4C4C4C;
+    height: 40px;
+}
+
+#conversejs #controlbox #controlbox-tabs li a {
+    height: 39px;
+    line-height: 39px;
+}
+
+#conversejs .chatbox .chat-body .chat-message span.chat-msg-me {
+    color: #4C4C4C;
+}
+
+#conversejs .chatbox .chat-body .chat-message span.chat-msg-them {
+    color: #F25829;
+}
+
+#conversejs .chatbox form.sendXMPPMessage .chat-toolbar a,
+#conversejs .chatbox form.sendXMPPMessage .chat-toolbar .toggle-smiley,
+#conversejs #controlbox #fancy-xmpp-status-select a.change-xmpp-status-message {
+    color: #4C4C4C;
+}
+
+#conversejs #converse-roster .roster-contacts dd.current-xmpp-contact span.icon-online {
+    color: #adce4a;
+}
+
+#conversejs #converse-roster .roster-contacts dd.current-xmpp-contact span.icon-offline {
+    color: #4C4C4C;
+}
+
+#conversejs .button-primary,
+#conversejs .button-secondary {
+    background-color: #4C4C4C;
 }
